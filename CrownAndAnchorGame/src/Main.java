@@ -72,7 +72,9 @@ public class Main {
             System.out.println(String.format("Win count = %d, Lose Count = %d, %.2f", winCount, loseCount, (float) winCount/(winCount+loseCount)));
             totalWins += winCount;
             totalLosses += loseCount;
-
+            
+            
+            //Bug 04 - not fixed - User input "q" to return the overall win rate - User is not notified of this input
             String ans = console.readLine();
             if (ans.equals("q")) break;
         } //while true
